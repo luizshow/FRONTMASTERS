@@ -39,6 +39,7 @@ header .line {
 
 .container {
     margin: auto;
+    padding: 0px 10px 0px 10px ;
 }
 
 .header--area {
@@ -49,6 +50,7 @@ header .line {
     justify-content: space-evenly;
     background-color: #2E8A57;
     transition-duration: 0.2s;
+    
 }
 
 .header--left {
@@ -161,6 +163,7 @@ main {
     justify-content: center;
     min-height: 200px;
     margin-bottom: 10px;
+    padding: 0px 10px 0px 10px;
 
     & span {
         text-align: center;
