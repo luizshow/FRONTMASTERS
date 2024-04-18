@@ -68,6 +68,7 @@ header .line {
     align-items: center;
     font-weight: 800;
     font-size: 19px;
+    padding: 10px 0px 10px 0px;
 
 
 }
@@ -227,28 +228,21 @@ main {
 }
 
 
-@media only screen and (max-width: 1280px) /*1055 px antes*/ {
-    .news-cards {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media only screen and (max-width: 980px) {
-    .news-cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media only screen and (max-width: 680px) {
-    .news-cards {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
 .news img {
     width: 100%; /*250 px antes*/
     height: 200px;
     border-radius: 10px;
+}
+
+df-messenger {
+    --df-messenger-bot-message: rgb(12, 139, 0);
+    --df-messenger-button-titlebar-color: #2E8A57;
+    --df-messenger-chat-background-color: rgba(0, 255, 255, 0.1);
+    --df-messenger-font-color: white;
+    --df-messenger-send-icon: #878fac;
+    --df-messenger-user-message: rgb(200, 200, 200);
+    --df-messenger-input-box-color: rgb(200, 200, 200);
+    --df-messenger-button-titlebar-font-color: white;
 }
 
 

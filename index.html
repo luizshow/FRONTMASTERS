@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/style.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/MediaQuery.css">
 
     <title>CODESF</title>
 </head>
@@ -59,22 +60,22 @@
             <h2>Últimas notícias</h2>
             <div class="news-cards">
                 <div class="cards">
-                    <img src="assets/imagens/noticias/NoImageFound.jpg.png" alt="">
+                    <img src="./assets/imagens/noticias/NoImageFound.jpg.png" alt="">
                     <p>Notícias recentes</p>
                     <p>Noticia bla bla bla</p>
                 </div>
                 <div class="cards">
-                    <img src="assets/imagens/noticias/NoImageFound.jpg.png" alt="">
+                    <img src="./assets/imagens/noticias/NoImageFound.jpg.png" alt="">
                     <p>Notícias recentes</p>
                     <p>Noticia bla bla bla</p>
                 </div>
                 <div class="cards">
-                    <img src="assets/imagens/noticias/NoImageFound.jpg.png" alt="">
+                    <img src="./assets/imagens/noticias/NoImageFound.jpg.png" alt="">
                     <p>Notícias recentes</p>
                     <p>Noticia bla bla bla</p>
                 </div>
                 <div class="cards">
-                    <img src="assets/imagens/noticias/NoImageFound.jpg.png" alt="">
+                    <img src="./assets/imagens/noticias/NoImageFound.jpg.png" alt="">
                     <p>Notícias recentes</p>
                     <p>Noticia bla bla bla</p>
                 </div>
@@ -83,7 +84,17 @@
 
         </section>
     </main>
-
+    <script src="https://kit.fontawesome.com/5086c6dc28.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./script/bot_codesf.js"></script>
+    <df-messenger
+        intent="WELCOME"
+        chat-title="codesfinho"
+        agent-id="a4a2963d-fda8-49f3-9017-e365bbff44fa"
+        language-code="pt-br"
+        chat-icon="./assets/imagens/bot/codesfinho.png">
+</df-messenger>
 </body>
 
 </html>
