@@ -93,6 +93,7 @@ nav li {
 
 nav ul {
     display: flex;
+    justify-content: center;
 }
 
 nav a {
