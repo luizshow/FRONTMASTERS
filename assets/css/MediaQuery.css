@@ -15,3 +15,47 @@
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+@media (max-width:1000px) {
+    header .container {
+        flex-direction:row;
+    }
+    nav ul {
+        flex-direction:column;
+        display:none;
+        position:absolute;
+        left:0;
+        top:85.3px;
+        width:100%;
+        background:#fff;
+        opacity: 0.84;
+    }
+
+    nav a {
+        color: #2E8A57;
+    }
+
+    .header--right a {
+        border-top: 1px solid green;
+        border-radius: 0;
+    }
+
+    header {
+        height:auto;
+    }
+    .logo {
+        margin-left: 10px;
+    }
+    .menuMobile {
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+    }
+    .social_media {
+        display: flex;
+        margin-left: 0;
+    }
+    .social_media a {
+        padding: 8px;
+    }
+}
