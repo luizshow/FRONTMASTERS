@@ -8,6 +8,14 @@
     
 }
 
+:root {
+    --verde-claro: #8EBC8E;
+    --cor-hearder: #6e0060;
+    --cor-op: #2E8A57; 
+    --camTec: #303558;
+    --camTec-hover: #551A8B;
+}
+
 
 body {
     background-color: #fff;
@@ -32,8 +40,9 @@ header .line {
     justify-content: space-evenly;
     gap: 650px;
     padding: 0 50px 0 50px;
-    background-color: #8EBC8E;
+    background-color: #2E8A57;
     height: 45px;
+    /*border-bottom: 0.1rem solid #fff;*/
 }
 
 
@@ -49,19 +58,14 @@ header .line {
     align-items: center;
     gap: 300px;
     justify-content: space-evenly;
-    background-color: #2E8A57;
+    background-image: linear-gradient(to bottom, #2E8A57, #8EBC8E, #fff 70%);
     transition-duration: 0.2s;
     
 }
 
-.header--left {
-
-    & h1 {
-        font-family: "Playfair Display", serif;
-
-        font-size: 3em;
-
-    }
+.header--left img {
+    width: 250px;
+    height: auto;
 }
 
 /* Menu Mobile */
@@ -74,7 +78,7 @@ header .line {
     margin-right:20px;
 }
 .mm_line {
-    border:2px solid #fff;
+    border:2px solid var(--cor-op);
     border-radius:10px;
 }
 /* Menu Mobile */
@@ -109,7 +113,7 @@ nav ul {
 nav a {
     display: flex;
     padding: 8px;
-    color: #D9E9E0;
+    color: var(--cor-op);
     transition: all 0.2s ease;
 
 }
@@ -117,11 +121,9 @@ nav a {
 nav .active a,
 nav a:hover {
 
-    color: #2E8A57;
-    background-color: #D9E9E0;
+    color: #67c290;
     border-radius: 4px;
     transition: 0.3s;
-
 }
 
 .social_media {
@@ -140,8 +142,8 @@ nav a:hover {
 
 .social_media a:hover {
 
-    color: #2E8A57;
-    background-color: #8EBC8E;
+    color: #67c290;
+    background-color: var(--cor-op);
 }
 
 .line {
@@ -152,9 +154,9 @@ nav a:hover {
 #banner {
     display: flex;
     justify-content: center;
-    background-image: url(../imagens/banner/foto2.jpg);
+    background-image: url(../imagens/banner/frutal-matriz_out.png);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-attachment: fixed;
     width: 100%;
     height: 80vh;
@@ -177,7 +179,7 @@ main {
     & span {
         text-align: center;
         margin: 0px 0 30px 0;
-        color: #81201A;
+        color: var(--camTec);
         font-size: 3rem;
     }
 }
@@ -202,11 +204,11 @@ main {
 
 .icons_cam button {
     background-color: white;
-    color: #81201a;
+    color: var(--camTec);
 }
 
 .icons_cam button:hover {
-    color: #b34742;
+    color: var(--camTec-hover);
     cursor:pointer;
 }
 
