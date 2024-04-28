@@ -459,7 +459,7 @@ article p:first-child::first-line {
 /* Footer */
 
 footer{
-    background-color: #111;
+    background-color: #222;
 }
 .footerContainer{
     width: 100%;
@@ -467,7 +467,7 @@ footer{
 }
 
 .footerBottom{
-    background-color: #000;
+    background-color: #111;
     padding: 20px;
     text-align: center;
 }
