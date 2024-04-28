@@ -59,7 +59,7 @@ header .line {
     align-items: center;
     gap: 300px;
     justify-content: space-evenly;
-    background-image: linear-gradient(to bottom, #2E8A57, #8EBC8E, #fff 70%);
+    background-image: linear-gradient(to bottom, #2E8A57, #8EBC8E, #e9fdd4 70%);
     transition-duration: 0.2s;
     
 }
@@ -122,7 +122,7 @@ nav a {
 nav .active a,
 nav a:hover {
 
-    color: #67c290;
+    color: #fff;
     border-radius: 4px;
     transition: 0.3s;
 }
