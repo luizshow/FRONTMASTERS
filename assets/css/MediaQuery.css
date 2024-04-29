@@ -132,6 +132,10 @@
         grid-template-columns: 1fr;
     }
 
+    .container_news{
+        padding: 40px;
+    }
+
     .lists {
         display: grid;
         grid-template-columns: 1fr 1fr;

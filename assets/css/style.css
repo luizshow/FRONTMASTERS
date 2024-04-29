@@ -29,10 +29,18 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.429);
 }
 
-header {
+#main-header {
     max-width: 100vw;
     color: #D9E9E0;
     font-family: "Roboto", sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-scroll {
+    background-color: rgb(255, 255, 255)
 }
 
 header .line {
@@ -370,7 +378,7 @@ button:hover {
 }
 
 .heading-1 {
-    margin-top: 60px;
+    margin-top: 200px;
     font-size: 40px;
     text-transform: uppercase;
     color: var(--title);

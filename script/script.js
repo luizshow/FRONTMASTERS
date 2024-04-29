@@ -57,6 +57,16 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
+window.addEventListener('scroll', function() {
+  const header = document.querySelector('#main-header');
+  if (window.scrollY > 200) {
+      header.classList.add('header-scroll');
+  } else {
+      header.classList.remove('header-scroll');
+  }
+});
+
 /*Partners*/
 
 $(document).ready(function(){
