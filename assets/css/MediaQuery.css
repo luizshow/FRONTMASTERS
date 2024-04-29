@@ -159,7 +159,6 @@
 
 @media (max-width: 700px){
     header .line {
-        justify-content: space-evenly;
         gap: 100px;
     }
 

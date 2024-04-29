@@ -38,11 +38,14 @@ else{
 
 document.addEventListener('DOMContentLoaded', function () {
   const smoothScrollLinks = document.querySelectorAll('.smooth-scroll');
-
   smoothScrollLinks.forEach(link => {
       link.addEventListener('click', function (e) {
           e.preventDefault();
-
+          if(document.body.clientWidth > 1000){
+            document.querySelector("nav ul").style.display="flex"
+          }else{
+            document.querySelector("nav ul").style.display="none"
+          }
           const targetId = this.getAttribute('href').substring(1); 
           const targetElement = document.getElementById(targetId);  
 
