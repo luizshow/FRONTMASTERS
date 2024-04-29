@@ -75,6 +75,16 @@ header .line {
     height: auto;
 }
 
+
+.header--right {
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    font-size: 19px;
+    padding: 10px 0px 10px 0px;
+}
+
+
 /* Menu Mobile */
 .menuMobile {
     display:none;
@@ -90,14 +100,6 @@ header .line {
 }
 /* Menu Mobile */
 
-
-.header--right {
-    display: flex;
-    align-items: center;
-    font-weight: 800;
-    font-size: 19px;
-    padding: 10px 0px 10px 0px;
-}
 
 .header--right ul {
     display: flex;
@@ -127,10 +129,9 @@ nav a {
 
 nav .active a,
 nav a:hover {
-
-    color: #fff;
+    color: var(--cor-op);
     border-radius: 4px;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .social_media {
