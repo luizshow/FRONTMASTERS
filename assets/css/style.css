@@ -20,7 +20,6 @@
 
 
 body {
-    background-color: #fff;
     max-width: 100vw;
 }
 
@@ -226,7 +225,7 @@ main {
 
 }
 
-.news-cards {
+.news-partnersCard {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
@@ -236,7 +235,7 @@ main {
 
 }
 
-.cards{
+.partnersCard{
     max-width: 100%;
 }
 
@@ -438,7 +437,7 @@ button:hover {
     height: 80px;
 }
 
-/* ARTICLE */
+/* Article */
 article > p {
     font-size: 20px;
     margin-bottom: 20px;
@@ -471,9 +470,11 @@ footer{
     padding: 20px;
     text-align: center;
 }
+
 .footerBottom p{
     color: white;
 }
+
 .designer{
     opacity: 0.7;
     text-transform: uppercase;
@@ -482,12 +483,113 @@ footer{
     margin: 0px 5px;
 }
 
+/*Partners*/
 
+.partners {
+    max-width: 1300px;
+    margin: auto;
+}
 
+.partners h2 {
+    text-align: center;
+    margin: 100px 0 30px 0;
+    color: var(--camTec);
+    font-weight: 500;
+    font-size: 3rem;
+    font-family:"Times New Roman";
+}
 
+.slick-slide {
+    margin: 0px 20px 50px;
+}
 
+.slick-slide img {
+    width: 100%;
+}
 
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
 
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor:pointer;
+    cursor:hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+
+.slick-track {
+    position: relative;
+    top:0;
+    left:0;
+    display: block;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display:none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-dragging img {
+    pointer-events: none
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
 
 
 
