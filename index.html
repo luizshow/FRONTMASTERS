@@ -1,44 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/style.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/MediaQuery.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js" defer></script>
+    <script src="script/script.js" defer></script>
 
-    <title>CODESF</title>
+    <title>Codesf</title>
 </head>
+
 <body>
-    <header>
-        <div class="line">
-            <span class="doubts">Fale Conosco</span>
-            <nav>
-                <div class="social_media">
-                    <li><a href="" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
-                    <li><a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                </div>
-            </nav>
-        </div>
-        <div class="container header--area">
-            <div class="header--left">
-                <a href="/"><img src="assets/imagens/logo/Codesf.png" alt=""></a>
-            </div>
-            <div class="header--right">
+    
+    <section id="banner">
+        <header>
+            <div class="line">
+                <span class="doubts">Fale Conosco</span>
                 <nav>
-                    <ul>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">HOME</a></li>
-                    </ul>
+                    <div class="social_media">
+                        <li><a href="" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li><a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    </div>
                 </nav>
             </div>
+            <div class="container header--area">
+                <div class="header--left">
+                    <img src="assets/imagens/logo/Logo Codesf 2.svg" alt="Codesf">
+                </div>
+                <div class="header--right">
+                    <nav>
+                        <div class="menuMobile">
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                        </div>
+                        <ul>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">HOME</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <main>
+        <section class="camTec">
+            <span>Câmaras Técnicas</span>
+            <div class="icons_cam">
+                <ul>
+                    <li><button title="saúde" id="open-modal"><i class="fa-solid fa-briefcase-medical"></i></button></li>
+                    <li><button title="educação"><i class="fa-solid fa-graduation-cap"></i></button></li>
+                    <li><button title="planejamento urbano"><i class="fa-solid fa-city"></i></button></li>
+                    <li><button title="tecnologia" ><i class="fa-solid fa-microchip"></i></button></li>
+                    <li><button title="economia" ><i class="fa-solid fa-building-columns"></i></button></li>
+                </ul>
+            </div>
+        </section>
+        <section class="news">
+            <h2>Últimas notícias</h2>
+            <div class="news-partnersCard">
+                <div class="partnersCard">
+                    <img src="./assets/imagens/noticias/NoImageFound.jpg.png" alt="">
+                    <a href="paginas/noticias/noticia01.html" target="_blank">
+                        <p>Notícias recentes</p>
+                    </a>
+                    <p>Noticia bla bla bla</p>
+                </div>
+                <div class="partnersCard">
+                    <img src="./assets/imagens/noticias/NoImageFound.jpg.png" alt="">
+                    <a href="paginas/noticias/noticia02.html" target="_blank">
+                        <p>Notícias recentes</p>
+                    </a>
+                    <p>Noticia bla bla bla</p>
+                </div>
+                <div class="partnersCard">
+                    <img src="./assets/imagens/noticias/NoImageFound.jpg.png" alt="">
+                    <a href="paginas/noticias/noticia03.html" target="_blank">
+                        <p>Notícias recentes</p>
+                    </a>
+                    <p>Noticia bla bla bla</p>
+                </div>
+                <div class="partnersCard">
+                    <img src="./assets/imagens/noticias/NoImageFound.jpg.png" alt="">
+                    <a href="paginas/noticias/noticia04.html" target="_blank">
+                        <p>Notícias recentes</p>
+                    </a>
+                    <p>Noticia bla bla bla</p>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <!--Modal-->
+
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <div class="modal-header">
+            <h2>Perfil Técnico</h2>
+            <button id="close-modal">Fechar</button>
         </div>
-    </header>
-    <section id="banner"></section>
-    <div class="teste"></div>
+        <div class="modal-body">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus animi officiis debitis ipsa, est amet officia minima ut, quae dignissimos nostrum deleniti qui fugit laudantium voluptatum error, quod iste aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. In, deserunt. Inventore soluta exercitationem nihil optio. Pariatur esse culpa aperiam repudiandae vitae velit. Laboriosam similique error eos ipsum eum non excepturi!</p>
+            <div class="profile">
+                <img src="assets/imagens/perfil-tecnico/retrato.png" alt="">
+                <a href="#">Acesse o currículo</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Partners-->
+    <div class="partners">
+        <h2>Nossos Colaboradores</h2>
+        <section class="partners-logos slider">
+            <div class="slide"><img src="assets/imagens/parceiros/NoImageFound.jpg.png" alt=""></div>
+            <div class="slide"><img src="assets/imagens/parceiros/NoImageFound.jpg.png" alt=""></div>
+            <div class="slide"><img src="assets/imagens/parceiros/NoImageFound.jpg.png" alt=""></div>
+            <div class="slide"><img src="assets/imagens/parceiros/NoImageFound.jpg.png" alt=""></div>
+            <div class="slide"><img src="assets/imagens/parceiros/NoImageFound.jpg.png" alt=""></div>
+            <div class="slide"><img src="assets/imagens/parceiros/NoImageFound.jpg.png" alt=""></div>
+            <div class="slide"><img src="assets/imagens/parceiros/NoImageFound.jpg.png" alt=""></div>
+            <div class="slide"><img src="assets/imagens/parceiros/NoImageFound.jpg.png" alt=""></div>
+        </section>
+    </div>
+    <!--Footer-->
+
+    <footer>
+        <div class="footerContainer">
+        </div>
+        <div class="footerBottom">
+            <p>© 2024 Codesf. Todos os direitos reservados;   Designed by <span class="designer">FrontMasters</span></p>
+        </div>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/5086c6dc28.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./script/bot_codesf.js"></script>
+    <df-messenger
+        intent="WELCOME"
+        chat-title="codesfinho"
+        agent-id="a4a2963d-fda8-49f3-9017-e365bbff44fa"
+        language-code="pt-br"
+        chat-icon="./assets/imagens/bot/codesfinho.png">
+    </df-messenger>
 </body>
 </html>

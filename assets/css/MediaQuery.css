@@ -1,0 +1,190 @@
+@media only screen and (max-width: 1280px) /*1055 px antes*/ {
+    .news-partnersCard {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (max-width:1000px) {
+    header .container {
+        flex-direction:row;
+    }
+
+    .header--right nav ul {
+        flex-direction:column;
+        display:none;
+        position:absolute;
+        left:0;
+        top:85.3px;
+        width:100%;
+        background:#fff;
+        opacity: 0.84;
+    }
+
+    nav a {
+        color: var(--camTec);
+    }
+
+    .header--right a {
+        border-top: 1px solid var(--camTec);
+        border-radius: 0;
+    }
+
+    .header--right ul{
+        margin-top: 109px;
+    }
+
+    header {
+        height:auto;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+
+    #banner {
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100vh;
+     
+    }
+
+    .menuMobile {
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        border-radius: 5px;
+        padding: 5px;
+        cursor: pointer;
+        transition: 0.05s;
+    }
+
+    .menuMobile:active{
+        scale: 1.2;
+    }
+
+    .social_media {
+        display: flex;
+        margin-left: 0;
+    }
+
+    .social_media a {
+        padding: 8px;
+    }
+
+    .camTec span{
+        font-size: 2.5rem;
+    }
+
+    .icons_cam ul i{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .news-partnersCard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .modal-body{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .profile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    header .line{
+        gap: 100px;
+    }
+
+    .news-partnersCard {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    .header--area {
+
+        gap: 100px;
+
+    }
+
+    header .line {
+        gap: 200px;
+
+    }
+}
+
+@media (max-width: 950px) {
+    .home {
+        grid-template-columns: 1fr;
+    }
+
+    .lists {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .list {
+        grid-template-columns: 1fr 5fr;
+    }
+
+    .card {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 650px) {
+    .lists {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px){
+    header .line {
+        justify-content: space-evenly;
+        gap: 100px;
+    }
+
+    .header--area{
+        gap: 0px;
+    }
+
+    .header--left img {
+        width: 250px;
+        height: auto;
+    }
+
+
+    #banner {
+        background-position: -100px;
+        background-attachment: fixed;
+        height: 80vh;
+    }
+
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
