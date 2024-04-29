@@ -43,18 +43,21 @@
     }
 
     #banner {
-        background-position: center;
+        background-position: left;
         background-size: cover;
         background-repeat: no-repeat;
-        background-attachment: scroll;
+        background-attachment: fixed;
         width: 100%;
-        height: 70vh;
+        height: 100vh;
+     
     }
 
     .menuMobile {
         display:flex;
         flex-direction:column;
         justify-content:space-around;
+        border-radius: 5px;
+        padding: 5px;
         cursor: pointer;
         transition: 0.05s;
     }
@@ -151,6 +154,27 @@
 }
 
 @media (max-width: 700px){
+    header .line {
+        justify-content: space-evenly;
+        gap: 100px;
+    }
+
+    .header--area{
+        gap: 0px;
+    }
+
+    .header--left img {
+        width: 250px;
+        height: auto;
+    }
+
+
+    #banner {
+        background-position: -100px;
+        background-attachment: fixed;
+        height: 80vh;
+    }
+
     .footerNav ul{
         flex-direction: column;
     } 
