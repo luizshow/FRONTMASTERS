@@ -34,6 +34,29 @@ else{
 }
 }
 
+/*SMOOTH SCROLL */
+
+document.addEventListener('DOMContentLoaded', function () {
+  const smoothScrollLinks = document.querySelectorAll('.smooth-scroll');
+
+  smoothScrollLinks.forEach(link => {
+      link.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute('href').substring(1); 
+          const targetElement = document.getElementById(targetId);  
+
+          if (targetElement) {
+              const targetPosition = targetElement.offsetTop; 
+              window.scrollTo({
+                  top: targetPosition,
+                  behavior: 'smooth' 
+              });
+          }
+      });
+  });
+});
+
 /*Partners*/
 
 $(document).ready(function(){
