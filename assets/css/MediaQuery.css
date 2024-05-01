@@ -18,7 +18,7 @@
         top:85.3px;
         width:100%;
         background:#fff;
-        opacity: 0.84;
+        opacity: 0.95;
     }
 
     nav a {
@@ -148,6 +148,9 @@
 
     .list {
         grid-template-columns: 1fr 5fr;
+        & img{
+            width: 100px;
+        }
     }
 
     .card {

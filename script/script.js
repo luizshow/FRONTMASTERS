@@ -1,5 +1,3 @@
-
-
 window.onload = function(){
   document.querySelector(".menuMobile").addEventListener("click", function(){
       if(document.querySelector(".header--right nav ul").style.display == 'flex') {
@@ -37,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
           const targetElement = document.getElementById(targetId);  
 
           if (targetElement) {
-              const targetPosition = targetElement.offsetTop; 
+              const targetPosition = targetElement.offsetTop - 165; 
               window.scrollTo({
                   top: targetPosition,
                   behavior: 'smooth' 
@@ -52,6 +50,7 @@ window.addEventListener('scroll', function() {
   const header = document.querySelector('#main-header');
   if (window.scrollY > 200) {
       header.classList.add('header-scroll');
+      
   } else {
       header.classList.remove('header-scroll');
   }
