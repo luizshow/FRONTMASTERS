@@ -30,6 +30,10 @@
         border-radius: 0;
     }
 
+    .header--right #ul-ultimo{
+        border-bottom: 1px solid var(--camTec);
+    }
+
     .header--right ul{
         margin-top: 99px;
     }
