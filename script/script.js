@@ -1,12 +1,12 @@
-window.onload = function(){
-  document.querySelector(".menuMobile").addEventListener("click", function(){
-      if(document.querySelector(".header--right nav ul").style.display == 'flex') {
-          document.querySelector(".header--right nav ul").style.display = 'none'; 
-      } else  {
-          document.querySelector(".header--right nav ul").style.display = 'flex';
-      }
+/* SMOOTH NAV OPEN */
+$(document).ready(function(){
+  $(".menuMobile").click(function(){
+    $("#ul-navbar").animate({
+      height: 'toggle'
+    });
   });
-};
+});
+
   window.onresize=function(){
 if(document.body.clientWidth > 1000){
   document.querySelector("nav ul").style.display="flex"
