@@ -183,6 +183,7 @@ nav a:hover {
 main {
     max-width: 1300px;
     margin: 30px auto;
+    padding: 0px 20px 0px 20px;
 }
 
 .camTec {
@@ -246,7 +247,7 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    padding: 0px 20px 0px 20px;
+    
     /*justify-items: center;*/
     align-items: center;
 
@@ -254,6 +255,10 @@ main {
 
 .partnersCard{
     max-width: 100%;
+
+    & a{
+        text-decoration: underline;
+    }
 }
 
 
@@ -275,6 +280,10 @@ df-messenger {
 }
 
 /*Modal*/
+
+#id01, #id02, #id03, #id04, #id05{
+    z-index: 5;
+}
 
 button {
     text-decoration: none;
