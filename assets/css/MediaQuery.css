@@ -79,8 +79,14 @@
         padding: 8px;
     }
 
+    #h1-video{
+        
+        font-size: 2rem;
+    }
+    
+
     .camTec span, .partners h2{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .w3-modal h2{
@@ -257,6 +263,9 @@
         display: flex;
         flex-direction: column;
     }
+
+    
+    
 }
 
 @media screen and (max-width: 940px){
