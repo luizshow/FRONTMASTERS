@@ -104,6 +104,11 @@
     .text{
         font-size: 1rem;
     }
+
+    .slick-slide img {
+        width: 140px;
+    }
+    
     
 }
 
@@ -124,6 +129,11 @@
         align-items: center;
         gap: 10px;
     }
+
+    .slick-slide img {
+        width: 100px;
+    }
+    
 
 }
 
@@ -286,4 +296,9 @@
     .heading-2 {
         font-size: 33px;
     }
+
+    .slick-slide img {
+        width: 80px;
+    }
+    
 }
