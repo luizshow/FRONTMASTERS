@@ -661,15 +661,18 @@ article p:first-child::first-line {
 
 footer{
     background-color: #222;
+    padding-top: 10px;
 }
 .footerContainer{
     display: flex;
     justify-content: center;
     gap: 10px;
-    height: 20rem;
+    height: 100%;
     padding: 10px;
     color: white;
     font-size: 1rem;
+    margin-bottom: 20px;
+    
 }
 
 .footerContainer iframe{
