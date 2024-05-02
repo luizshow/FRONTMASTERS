@@ -102,7 +102,7 @@
 }
 
 @media only screen and (max-width: 800px) {
-    .news-partnersCard {
+    .news-card {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -118,6 +118,7 @@
         align-items: center;
         gap: 10px;
     }
+
 }
 
 @media only screen and (max-width: 680px) {
@@ -129,11 +130,11 @@
         text-align: center;
     }
 
-    .news-partnersCard{
+    .news-card{
         margin: auto;
     }
     
-    .news-partnersCard {
+    .news-card {
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -172,11 +173,15 @@
         grid-template-columns: 1fr 5fr;
         & img{
             width: 100px;
-        }
+        }    
     }
 
     .card {
         margin-bottom: 40px;
+    }
+
+    article {
+        margin-top: 50px;
     }
 }
 
@@ -255,5 +260,12 @@
         width: 85%;
         display: flex;
         margin: 20px 0px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .heading-1,
+    .heading-2 {
+        font-size: 33px;
     }
 }
