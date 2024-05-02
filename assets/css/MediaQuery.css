@@ -79,16 +79,29 @@
         padding: 8px;
     }
 
-    .camTec span{
+    .camTec span, .partners h2{
         font-size: 2.5rem;
     }
 
+    .w3-modal h2{
+        font-size: 1.5rem;
+    }
+    
     .icons_cam ul i{
         font-size: 40px;
     }
+
+    .about h1{
+        font-size: 30px;
+    }
+    
+    .text{
+        font-size: 1rem;
+    }
+    
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 800px) {
     .news-partnersCard {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -112,9 +125,18 @@
         gap: 100px;
     }
 
+    .news h2{
+        text-align: center;
+    }
+
+    .news-partnersCard{
+        margin: auto;
+    }
+    
     .news-partnersCard {
         grid-template-columns: repeat(1, 1fr);
     }
+
 
 }
 
@@ -174,10 +196,18 @@
     }
 
     .header--left img {
-        width: 250px;
+        width: 200px;
         height: auto;
     }
 
+
+    .camTec{
+        margin-bottom: 20px;
+    }
+
+    .camTec span{
+        margin: 0px 0 10px 0;
+    }
 
     #banner {
         background-position: -100px;
@@ -217,7 +247,7 @@
 }
 
 @media screen and (max-width: 940px){
-    .text {
+    .particulars {
         display: flex;
         flex-direction: column;
     }

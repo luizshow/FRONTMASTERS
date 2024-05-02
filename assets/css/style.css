@@ -5,6 +5,8 @@
     padding: 0px;
     text-decoration: none;
     list-style: none;
+    font-family: "Roboto", sans-serif;
+
     
 }
 
@@ -16,7 +18,7 @@
     --camTec-hover: #551A8B;
     --title: #1C1C1C;
     --subtitle: #363636;
-    --amarelo-tit: #5c4e00;
+    --amarelo-tit: #4e4300;
 }
 
 
@@ -199,7 +201,8 @@ nav a:hover {
 .embed_yt {
     display: grid;
     grid-template-columns: 1fr;
-    height: 100vh;
+    margin-bottom: 50px;
+    /*background-color: #4142506e;*/
 }
 
 .col {
@@ -227,6 +230,7 @@ main {
         margin: 0px 0 30px 0;
         color: var(--camTec);
         font-size: 3rem;
+        font-weight: 500;
     }
 }
 
@@ -264,8 +268,9 @@ main {
     
     & h2 {
         margin-bottom: 20px;
+        font-weight: 500;
         /*text-align: center;*/
-        font-family: Arial, Helvetica, sans-serif;
+        
     }
 
 }
@@ -282,9 +287,25 @@ main {
 
 .partnersCard{
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 
     & a{
-        text-decoration: underline;
+       
+        background-color: var(--cor-op);
+        padding: 6px;
+        border-radius: 3px;
+        max-width: 80px;
+        color: #fff;
+        font-weight: 500;
+        transition-duration: 0.1s;
+
+        &:hover{
+            background-color: var(--camTec);
+            color: white;
+            
+        }
     }
 }
 
@@ -312,6 +333,7 @@ df-messenger {
     z-index: 5;
 }
 
+
 button {
     text-decoration: none;
     border: none;
@@ -320,6 +342,12 @@ button {
 button:hover {
     opacity: 1;
 }
+
+.w3-modal header, .w3-modal footer{
+    background-color: var(--camTec);
+    color: #fff;
+}
+
 
 .w3-modal h2{
     overflow: visible;
@@ -478,7 +506,8 @@ footer{
     color: var(--camTec);
     font-weight: 500;
     font-size: 3rem;
-    font-family:"Times New Roman";
+    font-family: "Roboto", sans-serif;
+
 }
 
 .slick-slide {
@@ -582,7 +611,7 @@ footer{
     margin-top: 200px;
     width: 82.5%;
     background:linear-gradient(to bottom, #FFD700, #F0E68C);
-    padding: 140px;
+    padding: 40px;
     border-radius: 10px;
     transition: .3s;
     box-shadow: 10px 10px 8px rgba(0,0,0,0.3);
@@ -598,12 +627,12 @@ footer{
 .about h1{
     color: var(--amarelo-tit);
     margin-bottom: 30px;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 900;
 }
 
 .text{
-    font-size: 13px;
+    font-size: 1.5rem;
     color: #545454;
     line-height: 30px;
     text-align: justify;
@@ -611,7 +640,7 @@ footer{
 }
 
 
-.text {
+.particulars {
     width: 85%;
     display: flex;
     justify-content: space-between;
@@ -645,16 +674,15 @@ footer{
     font-size: 28px;
     color: var(--amarelo-tit);
     margin-bottom: 20px;
+    font-weight: 600;
 } 
 
 .card1 p {
-    font-size: 17px;
+    font-size: 13px;
+    line-height: 30px;
     margin-bottom: 30px;
-    line-height: 1.5;
     color: #5e5e5e;
 }
-
-
 
 
 
