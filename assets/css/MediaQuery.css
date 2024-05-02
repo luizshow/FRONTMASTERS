@@ -198,3 +198,32 @@
         margin: 4px;
     }
 }
+
+@media screen and (max-width:1200px){
+    .about{
+        padding: 80px;
+    }
+}
+@media screen and (max-width:1000px){
+    .about{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 940px){
+    .text {
+        display: flex;
+        flex-direction: column;
+    }
+    .card1 {
+        width: 85%;
+        display: flex;
+        margin: 20px 0px;
+    }
+}

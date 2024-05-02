@@ -16,6 +16,7 @@
     --camTec-hover: #551A8B;
     --title: #1C1C1C;
     --subtitle: #363636;
+    --amarelo-tit: #5c4e00;
 }
 
 
@@ -572,13 +573,86 @@ footer{
     display: none;
 }
 
+/*About Us*/
 
 
+.about{
+    max-width: 1440;
+    margin: auto;
+    margin-top: 200px;
+    width: 82.5%;
+    background:linear-gradient(to bottom, #FFD700, #F0E68C);
+    padding: 140px;
+    border-radius: 10px;
+    transition: .3s;
+    box-shadow: 10px 10px 8px rgba(0,0,0,0.3);
+}
+
+.about:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+    0 3px 6px rgba(0,0,0,0.23);
+    transform: translate(0px, -8px);
+}
 
 
+.about h1{
+    color: var(--amarelo-tit);
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
 
 
+.text {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px auto;
+    text-align: center;
+}
 
+.card1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+    padding: 20px 20px;
+    background:linear-gradient(to bottom, #e6d85a,  #f0e8a7);
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px rgba(0,0,0,0.3);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.card1:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+    0 3px 6px rgba(0,0,0,0.23);
+    transform: translate(0px, -8px);
+}
+
+.card1 h2 {
+    font-size: 28px;
+    color: var(--amarelo-tit);
+    margin-bottom: 20px;
+} 
+
+.card1 p {
+    font-size: 17px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #5e5e5e;
+}
 
 
 
