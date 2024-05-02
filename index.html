@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/imagens/FavIcon/codesf.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/MediaQuery.css">
+    <link rel="stylesheet" href="assets/css/w3.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js" defer></script>
     <script src="script/script.js" defer></script>
@@ -16,10 +18,12 @@
 
 <body>
     
+    <!--Menu e Banner-->
+
     <section id="banner">
-        <header>
+        <header id="main-header">
             <div class="line">
-                <span class="doubts">Fale Conosco</span>
+              <a href="paginas/contatos/contato.html"><span class="doubts">Fale Conosco</span></a>
                 <nav>
                     <div class="social_media">
                         <li><a href="" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
@@ -30,7 +34,7 @@
             </div>
             <div class="container header--area">
                 <div class="header--left">
-                    <img src="assets/imagens/logo/Logo Codesf 2.svg" alt="Codesf">
+                    <a href="index.html"><img src="assets/imagens/logo/Logo Codesf 2.svg" alt="Codesf"></a>
                 </div>
                 <div class="header--right">
                     <nav>
@@ -39,62 +43,78 @@
                             <div class="mm_line"></div>
                             <div class="mm_line"></div>
                         </div>
-                        <ul>
-                            <li><a href="">HOME</a></li>
-                            <li><a href="">HOME</a></li>
-                            <li><a href="">HOME</a></li>
-                            <li><a href="">HOME</a></li>
-                            <li><a href="">HOME</a></li>
+                        <ul id="ul-navbar">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="paginas/sobre_nos/quemsomos.html">Sobre</a></li>
+                            <li><a href="paginas/noticias/noticia01.html" target="_blank">Notícias</a></li>
+                            <li><a href="#colaboradores" class="smooth-scroll">Colaboradores</a></li>
+                            <li id="ul-ultimo"><a href="paginas/contatos/contato.html">Contato</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
     </section>
-
+    
     <main>
+        <div class="embed_yt">
+          <div class="col">
+              <div class="embed">
+                  <iframe src="https://www.youtube.com/embed/9sNQFJAb3Ss?si=FP_-8j_5NruBFd8q"></iframe>
+              </div>
+              <p>video exemplo para seção youtube*</p>
+          </div>
+        </div>
+
+        <!--Câmaras Técnicas-->
+
         <section class="camTec">
             <span>Câmaras Técnicas</span>
             <div class="icons_cam">
                 <ul>
-                    <li><button title="saúde" id="open-modal"><i class="fa-solid fa-briefcase-medical"></i></button></li>
-                    <li><button title="educação"><i class="fa-solid fa-graduation-cap"></i></button></li>
-                    <li><button title="planejamento urbano"><i class="fa-solid fa-city"></i></button></li>
-                    <li><button title="tecnologia" ><i class="fa-solid fa-microchip"></i></button></li>
-                    <li><button title="economia" ><i class="fa-solid fa-building-columns"></i></button></li>
+                    <li><button title="saúde" onclick="document.getElementById('id01').style.display='block'"><i class="fa-solid fa-briefcase-medical"></i></button></li>
+                    <li><button title="Meio Ambiente e Saneamento Básico" onclick="document.getElementById('id02').style.display='block'"><i class="fa-solid fa-seedling"></i></button></li>
+                    <li><button title="Desenvolvimento urbano" onclick="document.getElementById('id03').style.display='block'"><i class="fa-solid fa-city"></i></button></li>
+                    <li><button title="Ciência, Tecnologia e Inovação" onclick="document.getElementById('id04').style.display='block'"><i class="fa-solid fa-microchip"></i></button></li>
+                    <li><button title="Atração de Investimentos" onclick="document.getElementById('id05').style.display='block'"><i class="fa-solid fa-building-columns"></i></button></li>
+                    <li><button title="Matrizes Energéticas" onclick="document.getElementById('id06').style.display='block'"><i class="fa-solid fa-lightbulb"></i></button></li>
+                    <li><button title="Inteligência de Dados" onclick="document.getElementById('id07').style.display='block'"><i class="fa-solid fa-magnifying-glass-chart"></i></button></li>
                 </ul>
             </div>
         </section>
+
+        <!--Notícias-->
+
         <section class="news">
             <h2>Últimas notícias</h2>
             <div class="news-partnersCard">
                 <div class="partnersCard">
                     <img src="./assets/imagens/noticias/NoImageFound.jpg.png" alt="">
+                    <p>Notícia 1</p>
                     <a href="paginas/noticias/noticia01.html" target="_blank">
-                        <p>Notícias recentes</p>
+                      Leia mais
                     </a>
-                    <p>Noticia bla bla bla</p>
                 </div>
                 <div class="partnersCard">
                     <img src="./assets/imagens/noticias/NoImageFound.jpg.png" alt="">
+                    <p>Notícia 2</p>
                     <a href="paginas/noticias/noticia02.html" target="_blank">
-                        <p>Notícias recentes</p>
+                      Leia mais
                     </a>
-                    <p>Noticia bla bla bla</p>
                 </div>
                 <div class="partnersCard">
                     <img src="./assets/imagens/noticias/NoImageFound.jpg.png" alt="">
+                    <p>Notícia 3</p>
                     <a href="paginas/noticias/noticia03.html" target="_blank">
-                        <p>Notícias recentes</p>
+                      Leia mais
                     </a>
-                    <p>Noticia bla bla bla</p>
                 </div>
                 <div class="partnersCard">
                     <img src="./assets/imagens/noticias/NoImageFound.jpg.png" alt="">
+                    <p>Notícia 4</p>
                     <a href="paginas/noticias/noticia04.html" target="_blank">
-                        <p>Notícias recentes</p>
+                      Leia mais
                     </a>
-                    <p>Noticia bla bla bla</p>
                 </div>
 
             </div>
@@ -104,24 +124,154 @@
 
     <!--Modal-->
 
-    <div id="fade" class="hide"></div>
-    <div id="modal" class="hide">
-        <div class="modal-header">
-            <h2>Perfil Técnico</h2>
-            <button id="close-modal">Fechar</button>
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+          <header class="w3-container "> 
+            <span onclick="document.getElementById('id01').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2>Câmara Técnica Saúde</h2>
+          </header>
+          <div class="w3-container espacamento-modal">
+            <ul>
+              <li>Daniel Godoi Bernardes da Silva - Coordenador;</li>
+              <li>Leandro Augusto Pantaleão;</li>
+              <li>Carlos Alfredo Salci Queiroz</li>
+            </ul>
+          </div>
+          <footer class="w3-container">
+          </footer>
         </div>
-        <div class="modal-body">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus animi officiis debitis ipsa, est amet officia minima ut, quae dignissimos nostrum deleniti qui fugit laudantium voluptatum error, quod iste aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. In, deserunt. Inventore soluta exercitationem nihil optio. Pariatur esse culpa aperiam repudiandae vitae velit. Laboriosam similique error eos ipsum eum non excepturi!</p>
-            <div class="profile">
-                <img src="assets/imagens/perfil-tecnico/retrato.png" alt="">
-                <a href="#">Acesse o currículo</a>
-            </div>
+    </div>
+
+    <div id="id02" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+          <header class="w3-container"> 
+            <span onclick="document.getElementById('id02').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2>Câmara Técnica de Meio Ambiente e Saneamento Básico</h2>
+          </header>
+          <div class="w3-container espacamento-modal">
+            <p>EM FORMAÇÃO...</p>
+            
+          </div>
+          <footer class="w3-container">
+          </footer>
         </div>
+    </div>
+
+    <div id="id03" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+          <header class="w3-container"> 
+            <span onclick="document.getElementById('id03').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2>Câmara Técnica de Desenvolvimento Urbano</h2>
+          </header>
+          <div class="w3-container espacamento-modal">
+            <ul>
+              <li>Paulo Roberto Coelho - Coordenador;</li>
+              <li>João de Deus Braga Júnior;</li>
+              <li>David Carlos de Oliveira;</li>
+              <li>Laydison Santos Marra</li>
+            </ul>
+          </div>
+          <footer class="w3-container">
+          </footer>
+        </div>
+    </div>
+
+    <div id="id04" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+          <header class="w3-container"> 
+            <span onclick="document.getElementById('id04').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2>Câmara Técnica de Ciência, Tecnologia e Inovação</h2>
+          </header>
+          <div class="w3-container espacamento-modal">
+            <ul>
+              <li>Ivan José dos Reis Filho – Coordenador;</li>
+              <li>Gustavo Gravatim (UEMG);</li>
+              <li>Fábio Rodrigues (UEMG);</li>
+              <li>Tais Arthur (UEMG);</li>
+              <li>Pedro Paulo (Objetivo);</li>
+              <li>Allynson Fujita (UEMG);</li>
+              <li>Bruno Ruiz (Cidade Imperial);</li>
+              <li>Fábio Muniz (Cidade Imperial);</li>
+              <li>Weder Martins (Prefeitura);</li>
+              <li>Matheus Frazão (Empreendedor TI);</li>
+              <li>Amilton Soares (Empreendedor TI);</li>
+              <li>Samuel Silvério (Empreendedor Info);</li>
+              <li>Glauber Ribeiro (Cerradão);</li>
+              <li>Leonardo Barcelos (UEMG);</li>
+              <li>Sérgio Portari (UEMG);</li>
+              <li>Leandro Macedo (Cerradão);</li>
+              <li>Joana Rafaela (SEBRAE);</li>
+              <li>Danilo Santos (Grupo JB);</li>
+              <li>Fabrício Cistolo (Cerradão);</li>
+              <li>Josnei Freitas (UEMG);</li>
+              <li>Leandro Queiroz (Consultor)</li>
+            </ul>
+          </div>
+          <footer class="w3-container">
+          </footer>
+        </div>
+    </div>
+
+    <div id="id05" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+          <header class="w3-container"> 
+            <span onclick="document.getElementById('id05').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2>Câmara Técnica de Atração de Investimentos</h2>
+          </header>
+          <div class="w3-container espacamento-modal">
+            <ul>
+              <li>Dino Marques de Oliveira - Coordenador;</li>
+              <li>Tiago Queiroz de Queiroz;</li>
+              <li>Aldiberto Dias Machado Júnior;</li>
+              <li>Maria Fernanda Clemente Petersen;</li>
+              <li>Leopoldo Galvão Morais Campos</li> 
+          </ul>
+          </div>
+          <footer class="w3-container">
+          </footer>
+        </div>
+    </div>
+
+    <div id="id06" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container"> 
+          <span onclick="document.getElementById('id06').style.display='none'" 
+          class="w3-button w3-display-topright">&times;</span>
+          <h2>Câmara Técnica de Matrizes Energéticas</h2>
+        </header>
+        <div class="w3-container espacamento-modal">
+          <p>EM FORMAÇÃO...</p>
+          
+        </div>
+        <footer class="w3-container">
+        </footer>
+      </div>
+    </div>
+
+    <div id="id07" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container"> 
+          <span onclick="document.getElementById('id07').style.display='none'" 
+          class="w3-button w3-display-topright">&times;</span>
+          <h2>Câmara Técnica de Inteligência de Dados</h2>
+        </header>
+        <div class="w3-container espacamento-modal">
+          <p>EM FORMAÇÃO...</p>
+          
+        </div>
+        <footer class="w3-container">
+        </footer>
+      </div>
     </div>
 
     <!--Partners-->
     <div class="partners">
-        <h2>Nossos Colaboradores</h2>
+        <h2 id="colaboradores">Nossos Colaboradores</h2>
         <section class="partners-logos slider">
             <div class="slide"><img src="assets/imagens/parceiros/NoImageFound.jpg.png" alt=""></div>
             <div class="slide"><img src="assets/imagens/parceiros/NoImageFound.jpg.png" alt=""></div>

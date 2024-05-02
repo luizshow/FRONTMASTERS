@@ -5,6 +5,8 @@
     padding: 0px;
     text-decoration: none;
     list-style: none;
+    font-family: "Roboto", sans-serif;
+
     
 }
 
@@ -16,6 +18,9 @@
     --camTec-hover: #551A8B;
     --title: #1C1C1C;
     --subtitle: #363636;
+    --amarelo-tit: #4e4300;
+    --amarelo-tit: #504400;
+
 }
 
 
@@ -29,10 +34,19 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.429);
 }
 
-header {
+#main-header {
     max-width: 100vw;
     color: #D9E9E0;
     font-family: "Roboto", sans-serif;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-scroll {
+    background-color: rgba(255, 255, 255, 0.796)
 }
 
 header .line {
@@ -171,9 +185,38 @@ nav a:hover {
 
 }
 
+/*Embed-YT*/
+
+.embed {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+.embed iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.embed_yt {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 50px;
+    /*background-color: #4142506e;*/
+}
+
+.col {
+    place-self: center;
+    width: 66vw;
+    margin: 1rem;
+}
+
 main {
     max-width: 1300px;
     margin: 30px auto;
+    padding: 0px 20px 0px 20px;
 }
 
 .camTec {
@@ -189,6 +232,7 @@ main {
         margin: 0px 0 30px 0;
         color: var(--camTec);
         font-size: 3rem;
+        font-weight: 500;
     }
 }
 
@@ -226,9 +270,9 @@ main {
     
     & h2 {
         margin-bottom: 20px;
-        padding-left: 20px;
+        font-weight: 500;
         /*text-align: center;*/
-        font-family: Arial, Helvetica, sans-serif;
+        
     }
 
 }
@@ -237,7 +281,7 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    padding: 0px 20px 0px 20px;
+    
     /*justify-items: center;*/
     align-items: center;
 
@@ -245,6 +289,26 @@ main {
 
 .partnersCard{
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    & a{
+       
+        background-color: var(--cor-op);
+        padding: 6px;
+        border-radius: 3px;
+        max-width: 80px;
+        color: #fff;
+        font-weight: 500;
+        transition-duration: 0.1s;
+
+        &:hover{
+            background-color: var(--camTec);
+            color: white;
+            
+        }
+    }
 }
 
 
@@ -267,98 +331,38 @@ df-messenger {
 
 /*Modal*/
 
+#id01, #id02, #id03, #id04, #id05, #id06, #id07{
+    z-index: 5;
+}
+
+
 button {
     text-decoration: none;
     border: none;
-}
-
-#close-modal {
-    padding: .6rem 1.2rem;
-    background-color: #888;
-    color: #fff;
-    border: none;
-    border-radius: .25rem;
-    cursor: pointer;
-    opacity: .7;
-    transition: 0.3s;
-    font-size: 1rem;
 }
 
 button:hover {
     opacity: 1;
 }
 
-#fade, #modal {
-    transition: 0.5s;
-    opacity: 1;
-    pointer-events: all;
+.w3-modal header, .w3-modal footer{
+    background-color: var(--camTec);
+    color: #fff;
 }
 
-#fade {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 5;
+
+.w3-modal h2{
+    overflow: visible;
+    padding-right: 30px;
+    
 }
 
-#modal {
-    padding: 1rem;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #B0C4DE;
-    border: 1px solid #fff;
-    z-index: 10;
-    width: 800px;
-    max-width: 80%;
-    border-radius: .4rem;
-    height: 100%;
-    max-height: 350px;
-    overflow-y: auto;
-    margin: 10px 0px 10px 0px;
+.w3-modal footer{
+    padding: 15px;
 }
 
-.modal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-
-}
-
-.modal-body {
-    display: flex;
-    align-items: center;
- 
-}
-
-.profile img {
-    border-radius: 5%;
-    margin-top: 2rem;
-    height: 125px;
-    width: 125px;
-}
- 
-.modal-body p{
-    margin-bottom: 1rem;
-    padding: 1.5rem;
-    text-align: justify;
-}
-
-#modal.hide,
-#fade.hide {
-    opacity: 0;
-    pointer-events: none;
-}
-
-#modal.hide {
-    top:0
+.w3-modal .espacamento-modal{
+    padding: 10px;
 }
 
 /*Newspaper*/
@@ -370,7 +374,7 @@ button:hover {
 }
 
 .heading-1 {
-    margin-top: 60px;
+    margin-top: 200px;
     font-size: 40px;
     text-transform: uppercase;
     color: var(--title);
@@ -504,7 +508,8 @@ footer{
     color: var(--camTec);
     font-weight: 500;
     font-size: 3rem;
-    font-family:"Times New Roman";
+    font-family: "Roboto", sans-serif;
+
 }
 
 .slick-slide {
@@ -599,15 +604,87 @@ footer{
     display: none;
 }
 
+/*About Us*/
 
 
+.about{
+    max-width: 1440;
+    margin: auto;
+    margin-top: 200px;
+    width: 82.5%;
+    background:linear-gradient(to bottom, #FFD700, #F0E68C);
+    padding: 40px;
+    border-radius: 10px;
+    transition: .3s;
+    box-shadow: 10px 10px 8px rgba(0,0,0,0.3);
+}
+
+.about:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+    0 3px 6px rgba(0,0,0,0.23);
+    transform: translate(0px, -8px);
+}
 
 
+.about h1{
+    color: var(--amarelo-tit);
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 1.5rem;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
 
 
+.particulars {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px auto;
+    text-align: center;
+}
 
+.card1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+    padding: 20px 20px;
+    background:linear-gradient(to bottom, #e6d85a,  #f0e8a7);
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px rgba(0,0,0,0.3);
+    transition: .3s;
+    cursor: pointer;
+}
 
+.card1:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+    0 3px 6px rgba(0,0,0,0.23);
+    transform: translate(0px, -8px);
+}
 
+.card1 h2 {
+    font-size: 28px;
+    color: var(--amarelo-tit);
+    margin-bottom: 20px;
+    font-weight: 600;
+} 
+
+.card1 p {
+    font-size: 13px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    color: #5e5e5e;
+}
 
 
 

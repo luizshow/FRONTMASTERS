@@ -18,7 +18,7 @@
         top:85.3px;
         width:100%;
         background:#fff;
-        opacity: 0.84;
+        opacity: 0.95;
     }
 
     nav a {
@@ -30,8 +30,12 @@
         border-radius: 0;
     }
 
+    .header--right #ul-ultimo{
+        border-bottom: 1px solid var(--camTec);
+    }
+
     .header--right ul{
-        margin-top: 109px;
+        margin-top: 99px;
     }
 
     header {
@@ -75,16 +79,29 @@
         padding: 8px;
     }
 
-    .camTec span{
+    .camTec span, .partners h2{
         font-size: 2.5rem;
     }
 
+    .w3-modal h2{
+        font-size: 1.5rem;
+    }
+    
     .icons_cam ul i{
         font-size: 40px;
     }
+
+    .about h1{
+        font-size: 30px;
+    }
+    
+    .text{
+        font-size: 1rem;
+    }
+    
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 800px) {
     .news-partnersCard {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -108,9 +125,18 @@
         gap: 100px;
     }
 
+    .news h2{
+        text-align: center;
+    }
+
+    .news-partnersCard{
+        margin: auto;
+    }
+    
     .news-partnersCard {
         grid-template-columns: repeat(1, 1fr);
     }
+
 
 }
 
@@ -132,6 +158,10 @@
         grid-template-columns: 1fr;
     }
 
+    .container_news{
+        padding: 40px;
+    }
+
     .lists {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -140,6 +170,9 @@
 
     .list {
         grid-template-columns: 1fr 5fr;
+        & img{
+            width: 100px;
+        }
     }
 
     .card {
@@ -155,7 +188,6 @@
 
 @media (max-width: 700px){
     header .line {
-        justify-content: space-evenly;
         gap: 100px;
     }
 
@@ -164,10 +196,18 @@
     }
 
     .header--left img {
-        width: 250px;
+        width: 200px;
         height: auto;
     }
 
+
+    .camTec{
+        margin-bottom: 20px;
+    }
+
+    .camTec span{
+        margin: 0px 0 10px 0;
+    }
 
     #banner {
         background-position: -100px;
@@ -186,5 +226,34 @@
     .socialIcons a{
         padding: 8px;
         margin: 4px;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .about{
+        padding: 80px;
+    }
+}
+@media screen and (max-width:1000px){
+    .about{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 940px){
+    .particulars {
+        display: flex;
+        flex-direction: column;
+    }
+    .card1 {
+        width: 85%;
+        display: flex;
+        margin: 20px 0px;
     }
 }

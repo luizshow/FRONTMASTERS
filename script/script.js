@@ -1,27 +1,12 @@
-const openModalButton = document.querySelector("#open-modal");
-const closeModalButton = document.querySelector("#close-modal");
-const modal = document.querySelector("#modal");
-const fade = document.querySelector("#fade");
-
-const toggleModal = () => {
-  modal.classList.toggle("hide");
-  fade.classList.toggle("hide");
-};
-
-[openModalButton, closeModalButton, fade].forEach((el) => {
-  el.addEventListener("click", () => toggleModal());
+/* SMOOTH NAV OPEN */
+$(document).ready(function(){
+  $(".menuMobile").click(function(){
+    $("#ul-navbar").animate({
+      height: 'toggle'
+    });
+  });
 });
 
-
-window.onload = function(){
-  document.querySelector(".menuMobile").addEventListener("click", function(){
-      if(document.querySelector(".header--right nav ul").style.display == 'flex') {
-          document.querySelector(".header--right nav ul").style.display = 'none'; 
-      } else  {
-          document.querySelector(".header--right nav ul").style.display = 'flex';
-      }
-  });
-};
   window.onresize=function(){
 if(document.body.clientWidth > 1000){
   document.querySelector("nav ul").style.display="flex"
@@ -33,6 +18,43 @@ else{
   document.querySelector("nav ul").style.display="none"
 }
 }
+
+/*SMOOTH SCROLL */
+
+document.addEventListener('DOMContentLoaded', function () {
+  const smoothScrollLinks = document.querySelectorAll('.smooth-scroll');
+  smoothScrollLinks.forEach(link => {
+      link.addEventListener('click', function (e) {
+          e.preventDefault();
+          if(document.body.clientWidth > 1000){
+            document.querySelector("nav ul").style.display="flex"
+          }else{
+            document.querySelector("nav ul").style.display="none"
+          }
+          const targetId = this.getAttribute('href').substring(1); 
+          const targetElement = document.getElementById(targetId);  
+
+          if (targetElement) {
+              const targetPosition = targetElement.offsetTop - 165; 
+              window.scrollTo({
+                  top: targetPosition,
+                  behavior: 'smooth' 
+              });
+          }
+      });
+  });
+});
+
+
+window.addEventListener('scroll', function() {
+  const header = document.querySelector('#main-header');
+  if (window.scrollY > 200) {
+      header.classList.add('header-scroll');
+      
+  } else {
+      header.classList.remove('header-scroll');
+  }
+});
 
 /*Partners*/
 
