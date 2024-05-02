@@ -217,7 +217,7 @@
 }
 
 @media screen and (max-width: 940px){
-    .text {
+    .particulars {
         display: flex;
         flex-direction: column;
     }

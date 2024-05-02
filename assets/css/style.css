@@ -16,7 +16,7 @@
     --camTec-hover: #551A8B;
     --title: #1C1C1C;
     --subtitle: #363636;
-    --amarelo-tit: #5c4e00;
+    --amarelo-tit: #504400;
 }
 
 
@@ -611,7 +611,7 @@ footer{
 }
 
 
-.text {
+.particulars {
     width: 85%;
     display: flex;
     justify-content: space-between;
@@ -645,12 +645,13 @@ footer{
     font-size: 28px;
     color: var(--amarelo-tit);
     margin-bottom: 20px;
+    font-weight: 600;
 } 
 
 .card1 p {
-    font-size: 17px;
+    font-size: 13px;
+    line-height: 30px;
     margin-bottom: 30px;
-    line-height: 1.5;
     color: #5e5e5e;
 }
 
