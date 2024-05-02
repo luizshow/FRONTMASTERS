@@ -35,7 +35,7 @@
     }
 
     .header--right ul{
-        margin-top: 99px;
+        margin-top: 66px;
     }
 
     header {
@@ -205,6 +205,9 @@
         height: auto;
     }
 
+    .header--right ul{
+        margin-top: 46px;
+    }
 
     .camTec{
         margin-bottom: 20px;
