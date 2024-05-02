@@ -730,7 +730,7 @@ footer{
     display: flex;
     justify-content: center;
     gap: 10px;
-    min-height: 300px;
+    min-height: 220px;
     padding: 10px;
     color: white;
     font-size: 1rem;
@@ -739,7 +739,7 @@ footer{
 }
 
 .footerContainer iframe{
-    height: 300px;
+    height: 200px;
 }
 
 #localCODESF{
