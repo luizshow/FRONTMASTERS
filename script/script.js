@@ -1,6 +1,7 @@
 /* SMOOTH NAV OPEN */
 $(document).ready(function(){
   $(".menuMobile").click(function(){
+    console.log('clicou')
     $("#ul-navbar").animate({
       height: 'toggle'
     });
