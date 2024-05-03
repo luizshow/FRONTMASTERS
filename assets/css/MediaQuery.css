@@ -81,16 +81,20 @@
 
     #h1-video{
         
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
 
     .camTec span, .partners h2{
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .news h2{
+        font-size: 1.8rem;
     }
 
     .w3-modal h2{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     
     .icons_cam ul i{
