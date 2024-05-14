@@ -47,8 +47,7 @@
     }
 
     #banner {
-        background-position: left;
-        background-size: cover;
+
         background-repeat: no-repeat;
         background-attachment: fixed;
         width: 100%;
@@ -216,6 +215,10 @@
         gap: 50px;
     }
 
+    #h1Header{
+        font-size: 3rem;
+    }
+
     .header--area{
         gap: 0px;
     }
@@ -238,9 +241,7 @@
     }
 
     #banner {
-        background-position: -100px;
         background-attachment: fixed;
-        height: 80vh;
     }
 
     .footerNav ul{
