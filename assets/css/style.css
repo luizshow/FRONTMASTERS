@@ -255,7 +255,7 @@ main {
     justify-content: center;
     min-height: 200px;
     margin-bottom: 10px;
-    padding: 0px 10px 0px 10px;
+    padding: 50px;
     background-color: rgba(169, 169, 169, 0.325);
 
     & span {
@@ -280,8 +280,24 @@ main {
     flex-wrap: wrap;
     gap: 30px;
 
+    & li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        p{
+            font-weight: 800;
+            color: var(--camTec);
+        }
+
+    
+
+
+    }
+
     & i {
         font-size: 60px;
+       
     }
 }
 
