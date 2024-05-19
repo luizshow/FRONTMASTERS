@@ -88,9 +88,6 @@
         font-size: 1.8rem;
     }
 
-    .news h2{
-        font-size: 1.8rem;
-    }
 
     .w3-modal h2{
         font-size: 1.8rem;
@@ -116,9 +113,6 @@
 }
 
 @media only screen and (max-width: 800px) {
-    .news-card {
-        grid-template-columns: repeat(2, 1fr);
-    }
 
     .modal-body{
         display: flex;
@@ -144,19 +138,6 @@
     header .line{
         gap: 50px;
     }
-
-    .news h2{
-        text-align: center;
-    }
-
-    .news-card{
-        margin: auto;
-    }
-    
-    .news-card {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
 
 }
 
