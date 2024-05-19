@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../../assets/imagens/FavIcon/codesf.png" type="image/x-icon">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="./https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="../../assets/css/MediaQuery.css">
+  <link rel="stylesheet" href="../../assets/css/w3.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+  <script src="../../script/script.js" defer></script>
+  <style>
+    body {
+      background-color: #d3d3d3;
+    }
+  </style>
+  <title>Projetos</title>
+</head>
+<body>
+    <header id="main-header">
+        <div class="line">
+          <a href="../contatos/contato.html"><span class="doubts">Fale Conosco</span></a>
+            <nav>
+                <div class="social_media">
+                    <li><a href="" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                </div>
+            </nav>
+        </div>
+        <div class="container_menu header--area">
+            <div class="header--left">
+                <a href="../../index.html"><img src="../../assets/imagens/logo/Logo Codesf 2.svg" alt="Codesf"></a>
+            </div>
+            <div class="header--right">
+                <nav>
+                    <div class="menuMobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+                    <ul id="ul-navbar">
+                      <li><a href="../../index.html">Home</a></li>
+                      <li><a href="../sobre_nos/quemsomos.html">Sobre</a></li>
+                      <li id="ul-ultimo"><a href="#contatoFooter" class="smooth-scroll">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section class="projects">
+      <h1>Projetos</h1>
+      <div class="project_area">
+        <div class="project-1">
+          <img src="../../assets/imagens/projetos/Foto de José Luiz(32).jpg" alt="">
+          <div class="content">
+            <h4 style="text-align: center; font-weight:500; color:#005e2a">Adote uma área verde</h4><br><br>
+            <p>Projeto que possibilita tanto pessoas físicas quanto empresas privadas adotem uma área verde. Contribuindo para deixar Frutal uma cidade ainda mais viva e bonita, além de promover uma conexão entre a população local e o espaço adotado.</p><br><br>
+            <p>Tem interesse em participar? Preencha o <a href="https://forms.office.com/" target="_blank"><span style="color:blue">formulário.</span></a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footerContainer" id="contatoFooter">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3748.6274315965666!2d-48.927674664722915!3d-20.02414560485629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bcb10163686f81%3A0x37d75b06868783fe!2sACIF%20CDL%20Frutal!5e0!3m2!1spt-BR!2sbr!4v1714672036789!5m2!1spt-BR!2sbr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="localCODESF">
+          <h2>Contatos: </h2>
+          <p><i class="fa-solid fa-location-dot"></i>Av. Brasília, 54 - Jardim das Laranjeiras, Frutal - MG, 38204-136</p>
+          <p><i class="fa-solid fa-phone"></i>(99) 9999-9999</p>
+          <p><i class="fa-solid fa-square-envelope"></i>codesfrutal@gmail.com</p>
+        </div>
+      </div>
+      <div class="footerBottom">
+          <p>© 2024 Codesf. Designed by <span class="designer">FrontMasters</span></p>
+      </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/5086c6dc28.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../../script/bot_codesf.js"></script>
+    <df-messenger
+        intent="WELCOME"
+        chat-title="codesfinho"
+        agent-id="a4a2963d-fda8-49f3-9017-e365bbff44fa"
+        language-code="pt-br"
+        chat-icon="../../assets/imagens/bot/codesfinho.png">
+    </df-messenger>
+    
+</body>
+</html>
