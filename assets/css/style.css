@@ -516,6 +516,7 @@ button:hover {
     border-radius: 10px;
     transition: .3s;
     box-shadow: 10px 10px 8px rgba(0,0,0,0.3);
+    
 }
 
 /* .about:hover {
@@ -535,7 +536,7 @@ button:hover {
 .text{
     font-size: 1.2rem;
     color: #545454;
-    line-height: 5px;
+    
     text-align: justify;
     margin-bottom: 40px;
 }
@@ -543,7 +544,7 @@ button:hover {
 .about ul li {
     font-size: 1.2rem;
     color: #545454;
-    line-height: 5px;
+    
     text-align: justify;
     margin-bottom: 40px;
 }
