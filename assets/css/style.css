@@ -210,6 +210,7 @@ nav a:hover {
     position: relative;
     width: 100%;
     padding-bottom: 56.25%;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
 }
 
 #h1-video{
@@ -254,9 +255,11 @@ main {
     flex-direction: column;
     justify-content: center;
     min-height: 200px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     padding: 50px;
     background-color: rgba(169, 169, 169, 0.325);
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+    border-radius: 10px;
 
     & span {
         text-align: center;
@@ -360,7 +363,10 @@ button:hover {
     display: flex;
     justify-content: center;
     margin-top: 80px;
+    margin-bottom: 70px;
     width: 100%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
     padding: 10px;
     background-color: rgba(169, 169, 169, 0.325);
 }
@@ -376,7 +382,7 @@ button:hover {
 #diretoria .grid-diretoria{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 50px;
     justify-content: space-evenly;
     margin: auto;
 }
@@ -515,7 +521,7 @@ button:hover {
     padding: 40px;
     border-radius: 10px;
     transition: .3s;
-    box-shadow: 10px 10px 8px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
     
 }
 
@@ -528,6 +534,7 @@ button:hover {
 
 .about h1{
     color: var(--amarelo-tit);
+
     margin-bottom: 30px;
     font-size: 35px;
     font-weight: 900;
@@ -536,14 +543,14 @@ button:hover {
 .text{
     font-size: 1.2rem;
     color: #545454;
-    
+
     text-align: justify;
     margin-bottom: 40px;
 }
 
 .about ul li {
     font-size: 1.2rem;
-    color: #545454;
+    color: var(--camTec);
     
     text-align: justify;
     margin-bottom: 40px;
@@ -598,6 +605,9 @@ button:hover {
     margin: auto;
     max-width: 1440px;
     margin-top: 200px;
+    padding: 0px 10px;
+    background-color: #F8F7F7;
+    
 
     & h1 {
         text-align: center;
@@ -611,11 +621,15 @@ button:hover {
 .project_area {
     border-radius: 10px;
     margin-bottom: 200px;
-    background-color: rgba(169, 169, 169, 0.325);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .project-1 {
     display: flex;
+    background-color: rgba(169, 169, 169, 0.325);
+    border-radius: 10px;
 }
   
 .project-1 img {
