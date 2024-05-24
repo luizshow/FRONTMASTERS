@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 window.addEventListener('scroll', function() {
   const header = document.querySelector('#main-header');
-  if (window.scrollY > 200) {
+  if (window.scrollY > 0) {
       header.classList.add('header-scroll');
       
   } else {
@@ -81,3 +81,5 @@ $(document).ready(function(){
      }] 
   })
 })
+
+
