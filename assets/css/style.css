@@ -245,7 +245,7 @@ nav a:hover {
 }
 
 main {
-    max-width: 1300px;
+    max-width: 1440px;
     margin: 30px auto;
     padding: 0px 20px 0px 20px;
 }
@@ -513,14 +513,24 @@ button:hover {
 
 #sobreNos{
 
-    padding: 20px;
-    background-color: rgba(166, 199, 135, 0.61);
+    & #aboutContent{
+        padding: 0px 20px 20px 20px;
+    }
+    
+    /*background-color: rgba(166, 199, 135, 0.61);*/
     box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
     border-radius: 10px;
+    overflow: hidden;
 
     h1{
         margin-bottom: 30px;
-       
+        background-color: #29A71A;
+        width: 100%;
+        color: var(--camTec);
+        font-weight: 700;
+        margin: 0px 0px 50px 0px;
+        padding: 20px;
+        
     }
 
     h3{
