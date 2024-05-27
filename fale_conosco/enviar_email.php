@@ -31,11 +31,11 @@ try {
     $mail->isHTML(true);                                  
     $mail->Subject = $assunto;
     $mail->Body    = "Nome: ".$name."</br>Email: ".$email.
-    "</br>Telefone: ".$phone."</br>Messagem: ".$message;
+    "</br>Messagem: ".$message;
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-
-    $mail->send();
+    $mail->send(); 
     header("Location: ../paginas/contatos/contato.html");
+    
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }

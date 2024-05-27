@@ -3,7 +3,6 @@ let txtBox_Assunto = document.getElementById("txtBox_Assunto");
 let txtBox_Email = document.getElementById("txtBox_Email");
 let txtBox_Message = document.getElementById("txtBox_Message");
 let information = document.getElementById("information");
-
 function validaName(){
     let txtBox_Name_Value = document.getElementById("txtBox_Name").value;
     let tamanhoMaior3 = txtBox_Name_Value.length;
@@ -63,5 +62,3 @@ txtBox_Message.addEventListener("keyup",()=>{
         document.getElementById("btn_Enviar").disabled = true;
     }
 })
-
-

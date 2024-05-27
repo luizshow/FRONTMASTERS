@@ -12,7 +12,62 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js" defer></script>
     <script src="../../script/script.js" defer></script>
+<style>
+    .loader {
+        position: relative;
+      
+            top: 13%;
+            left: 13%;
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #3498db;
+        width: 120px;
+        height: 120px;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+    }
 
+        /* Safari */
+    @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    .modal {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+            max-width: 400px;
+            border-radius: 5px;
+            
+        }
+
+        .modal_content {
+            position: absolute;
+            background-color: #fff;
+            width: 50%;
+            max-width: 400px;
+            margin: 20px auto;
+           
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilos para o botão que abre a modal */
+        .open-modal-button {
+            cursor: pointer;
+        }
+</style>
     <title>Entre em contato</title>
 </head>
 
@@ -86,11 +141,32 @@
             <input class="w3-input w3-border" id="txtBox_Message" name="message" type="text" placeholder="Mensagem" required minlength="3">
             </div>
         </div>
-        <p id="information">Para liberar o botão, basta preencher todos os campos.</p>
-        <button class="w3-button w3-block w3-section w3-ripple w3-padding" id="btn_Enviar" style="color: #fff; background-color: #303558 ; cursor: pointer;" disabled>Enviar</button>
+        <p id="information">Para liberar o botão, basta preencher todos os campos corretamente.</p>
+        <button class="w3-button w3-block w3-section w3-ripple w3-padding" onclick="document.getElementById('id01').style.display='block'" id="btn_Enviar" style="color: #fff; background-color: #303558 ; cursor: pointer;" disabled>Enviar</button>
         
     </form>
+    <div class="w3-container">
+        <h2>W3.CSS Modal</h2>
+        <p>Use w3-container classes to create different sections in the modal (e.g. header & footer).</p>
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
+      
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content">
+            <header class="w3-container w3-teal"> 
+              <span onclick="document.getElementById('id01').style.display='none'" 
+              class="w3-button w3-display-topright">&times;</span>
+              <h2 style="text-align: center;">Aviso!</h2>
+            </header>
+            <div class="w3-container">
+              <p style="text-align: center; margin-top:20px; margin-bottom: 20px;">Email enviado com sucesso</p>
+            </div>
+            <footer class="w3-container w3-teal">
+            </footer>
+          </div>
+        </div>
+      </div>
     </main>
+    
 
     <footer>
         <div class="footerContainer" id="contatoFooter">
@@ -106,7 +182,7 @@
             <p>© 2024 Codesf. Designed by <span class="designer">FrontMasters</span></p>
         </div>
     </footer>
-    <script src="../../script/validaCampos.js"
+    <script src="../../script/validaCampos.js"></script>
     <script src="https://kit.fontawesome.com/5086c6dc28.js" crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
