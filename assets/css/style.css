@@ -58,15 +58,6 @@ body {
 }
 
 
-#h1Header{
-    font-family: Lato, sans-serif;
-    font-weight: 800;
-    font-size: 4rem;
-    color: white;
-    text-shadow: 2px 5px 4px rgb(163, 163, 29);
-    padding: 10px;
-    border-radius: 10px;
-}
 
 header .line {
     display: flex;
@@ -104,7 +95,7 @@ header .line {
 }
 
 .header--left img {
-    width: 250px;
+    width: 200px;
     height: auto;
 }
 
@@ -200,7 +191,76 @@ nav a:hover {
     background-attachment: fixed;
     width: 100%;
     height: 100vh;
+    margin-top: 133px;
+    
 
+
+    & p{
+       
+        color: white;
+        
+       
+    }
+}
+
+.textoBanner{
+    height: 100%;
+    width: 40%;
+    background-color: rgba(87, 87, 87, 0.692);
+    display: flex;
+    flex-direction: column;
+    text-align: center  ;
+    overflow-y: scroll;
+    padding: 20px 10px;
+    scrollbar-width: none; /* Firefox */
+
+    & h2{
+        margin: 50px 0px 80px 0px;
+        color: white;
+        font-weight: 700;
+    }
+    
+    & p{
+        text-align: justify;
+    }
+}
+
+.textoBanner::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+#h1Header{
+    font-family: Lato, sans-serif;
+    
+    font-size: 4rem;
+    color: white;
+    text-shadow: 2px 5px 4px rgb(163, 163, 29);
+    font-weight: 700;
+    border-radius: 10px;
+    width: 60%;
+}
+
+
+/* CIDADE */
+
+.imgCidade1{
+    background: url(../imagens/banner/Foto\ de\ José\ Luiz\(19\).jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 70px 0px 30px 0px;
+    padding: 20px;
+    color: white;
+
+    & h1{
+    font-weight: 800;}
+
+    & .textCidade{
+        padding: 10px;
+        background-color: #2222227a;
+    }
 }
 
 /*Embed-YT*/
@@ -366,7 +426,7 @@ button:hover {
     width: 100%;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
-    padding: 10px;
+    padding: 10px 10px 30px 10px;
     background-color: rgba(169, 169, 169, 0.325);
 }
 
@@ -381,7 +441,7 @@ button:hover {
 #diretoria .grid-diretoria{
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 100px;
     justify-content: space-evenly;
     margin: auto;
 }
@@ -526,7 +586,8 @@ button:hover {
         margin-bottom: 30px;
         background-color: #29A71A;
         width: 100%;
-        color: var(--camTec);
+        color: #fff;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.507);
         font-weight: 700;
         margin: 0px 0px 50px 0px;
         padding: 20px;
