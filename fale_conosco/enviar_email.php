@@ -18,14 +18,15 @@ try {
     $message = $_POST['message'];
     $mail = new PHPMailer();
     $mail->isSMTP();
-    $mail->Host = 'sandbox.smtp.mailtrap.io';
+    $mail->Host = 'sandbox.smtp.mailtrap.io'; //insira o servidor smtp
     $mail->SMTPAuth = true;
-    $mail->Port = 2525;
-    $mail->Username = '28f9fd78212427';
-    $mail->Password = '49fb615697a07e';
+    $mail->Port = 2525; //insira a porta do servidor smtp 
+    $mail->Username = '28f9fd78212427'; //insira o username do servidor smtp
+    $mail->Password = '49fb615697a07e'; //insira o password do servidor smtp
 
-    $mail->setFrom('from@example.com', 'Mailer');
-    $mail->addAddress('codesf@hotmail.com', 'Codesf');   
+    $mail->setFrom('from@example.com', 'Mailer'); /*Insira o email. Caso seja utilizado o servidor do gmail ou outlook
+    , este email deve ser a mesma do username do servidor smtp*/
+    $mail->addAddress('codesf@hotmail.com', 'Codesf'); //insira o email do destinatário
   
    
     $mail->isHTML(true);                                  

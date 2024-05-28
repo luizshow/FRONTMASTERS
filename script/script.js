@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
           const targetElement = document.getElementById(targetId);  
 
           if (targetElement) {
-              const targetPosition = targetElement.offsetTop - 150; // - 165 
+              const targetPosition = targetElement.offsetTop - 130; // - 165 
               window.scrollTo({
                   top: targetPosition,
                   behavior: 'smooth' 

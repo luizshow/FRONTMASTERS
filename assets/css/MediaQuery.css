@@ -77,6 +77,27 @@
         padding: 8px;
     }
 
+    #sobreNos{
+
+
+        h1{
+            font-size: 2em;
+        }
+
+        h2, h3{
+            font-size: 1.5rem;
+        }
+        
+        p{
+            font-size: 1.2rem;
+        }
+
+    }
+
+    #missionVision{
+    }
+    
+
     #h1-video{
         
         font-size: 1.8rem;
@@ -163,6 +184,18 @@
 
     }
 
+    #cidade{
+        flex-direction: column;
+        
+        & .imgCidade1, .imgCidade2{
+            width: 100%;
+            height: 450px;
+        }
+    
+    }
+
+   
+
     
 }
 
@@ -201,6 +234,23 @@
     .lists {
         grid-template-columns: 1fr;
     }
+
+    #sobreNos{
+
+        p{
+            font-size: 1.0rem;
+        }
+
+        h1{
+            font-size: 1.6em;
+        }
+
+        h2, h3{
+            font-size: 1.4rem;
+        }
+    }
+
+    
 }
 
 @media (max-width: 700px){
@@ -236,6 +286,17 @@
     #banner {
         background-attachment: fixed;
         margin-top: 116px;
+    }
+
+    #cidade{
+        & .textCidade{
+           
+           
+            & p{
+                font-size: 1em;
+            }
+
+        }
     }
 
     .footerNav ul{
