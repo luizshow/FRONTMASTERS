@@ -108,6 +108,9 @@
         font-size: 1.8rem;
     }
 
+    .camTec span{
+        font-size: 1.8rem;
+    }
 
     .w3-modal h2{
         font-size: 1.8rem;
@@ -280,7 +283,11 @@
     }
 
     .camTec span{
-        margin: 0px 0 10px 0;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .icons_cam ul p{
+        font-size: 15px;
     }
 
     #banner {
